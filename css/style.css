@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.slider .one {
+    background: url(../images/1.jpg) no-repeat center /cover;
+}
+
+.slider .two {
+    background: url(../images/2.jpg) no-repeat center /cover;
+}
+
+.slider .three {
+    background: url(../images/3.jpg) no-repeat center /cover;
+}
+
+.slider .four {
+    background: url(../images/4.jpg) no-repeat center /cover;
+}
+
+.slider .five {
+    background: url(../images/5.jpg) no-repeat center /cover;
+}
+
+.slider .six {
+    background: url(../images/6.jpg) no-repeat center /cover;
+}
+
+.slider {
+    height: 500px;
+
+}
+
+.slider .slide {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    transform: translateX(100%);
+}
+
+.slider .active {
+    transform: translateX(0);
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.button .prev {
+    position: absolute;
+    top: 250px;
+    left: 30px;
+    font-size: 30px;
+    height: 30px;
+    width: 30px;
+    background: white;
+    border-radius: 50%;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    transition: all linear .4s;
+    border: 2px solid black;
+    opacity: 20%;
+}
+
+.button .prev:hover {
+    background: chartreuse;
+    opacity: 100%;
+}
+
+.button .next {
+    position: absolute;
+    top: 250px;
+    right: 30px;
+    font-size: 30px;
+    height: 30px;
+    width: 30px;
+    background: white;
+    border-radius: 50%;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    transition: all linear .4s;
+    border: 2px solid black;
+    opacity: 20%;
+}
+
+.button .next:hover {
+    background: chartreuse;
+    opacity: 100%;
+}
+
+.smooth {
+    transition: 1s ease;
+}
+
+.auto {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.auto .autoplay {
+    text-transform: capitalize;
+    font-size: 30px;
+    padding: 20px;
+    width: 350px;
+    font-weight: bold;
+    background: white;
+    transition: all linear .4s;
+}
+
+.auto .autoplay:hover {
+    background: chartreuse;
+}
+
+.activelast {
+    transform: translateX(-100%);
+}
+
+.type {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+
+.type .note {
+    text-transform: capitalize;
+    background: chartreuse;
+    padding: 20px 20px;
+    border-radius: 25px;
+}
+
+.type .note i {
+    color: rgb(255, 0, 0)
+}

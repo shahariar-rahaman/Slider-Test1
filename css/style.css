@@ -42,11 +42,17 @@
 .slider .active {
     transform: translateX(0);
 }
+.slider .last {
+    transform: translateX(-100%);
+}
 
-.overlay {
+.sliderBody .slide .overlay {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, .5);
+    font-size: 150px;
+    color: chartreuse;
+    text-align: center;
 }
 
 body {
@@ -98,7 +104,7 @@ body {
 }
 
 .smooth {
-    transition: 1s ease;
+    transition: .4s ease-in-out;
 }
 
 .auto {
@@ -119,25 +125,4 @@ body {
 
 .auto .autoplay:hover {
     background: chartreuse;
-}
-
-.activelast {
-    transform: translateX(-100%);
-}
-
-.type {
-    display: flex;
-    justify-content: center;
-    padding: 100px;
-}
-
-.type .note {
-    text-transform: capitalize;
-    background: chartreuse;
-    padding: 20px 20px;
-    border-radius: 25px;
-}
-
-.type .note i {
-    color: rgb(255, 0, 0)
 }
